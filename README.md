@@ -1,14 +1,14 @@
 # Library Template
 
-[![Build](https://github.com/michaelruocco/library-template/workflows/pipeline/badge.svg)](https://github.com/michaelruocco/library-template/actions)
-[![codecov](https://codecov.io/gh/michaelruocco/library-template/branch/master/graph/badge.svg?token=FWDNP534O7)](https://codecov.io/gh/michaelruocco/library-template)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/272889cf707b4dcb90bf451392530794)](https://www.codacy.com/gh/michaelruocco/library-template/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michaelruocco/library-template&amp;utm_campaign=Badge_Grade)
-[![BCH compliance](https://bettercodehub.com/edge/badge/michaelruocco/library-template?branch=master)](https://bettercodehub.com/)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_library-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=michaelruocco_library-template)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_library-template&metric=sqale_index)](https://sonarcloud.io/dashboard?id=michaelruocco_library-template)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_library-template&metric=coverage)](https://sonarcloud.io/dashboard?id=michaelruocco_library-template)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_library-template&metric=ncloc)](https://sonarcloud.io/dashboard?id=michaelruocco_library-template)
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.michaelruocco/library-template.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.michaelruocco%22%20AND%20a:%22library-template%22)
+[![Build](https://github.com/michaelruocco/random-value-suppliers/workflows/pipeline/badge.svg)](https://github.com/michaelruocco/random-value-suppliers/actions)
+[![codecov](https://codecov.io/gh/michaelruocco/random-value-suppliers/branch/master/graph/badge.svg?token=FWDNP534O7)](https://codecov.io/gh/michaelruocco/random-value-suppliers)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/272889cf707b4dcb90bf451392530794)](https://www.codacy.com/gh/michaelruocco/random-value-suppliers/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michaelruocco/random-value-suppliers&amp;utm_campaign=Badge_Grade)
+[![BCH compliance](https://bettercodehub.com/edge/badge/michaelruocco/random-value-suppliers?branch=master)](https://bettercodehub.com/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_random-value-suppliers&metric=alert_status)](https://sonarcloud.io/dashboard?id=michaelruocco_random-value-suppliers)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_random-value-suppliers&metric=sqale_index)](https://sonarcloud.io/dashboard?id=michaelruocco_random-value-suppliers)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_random-value-suppliers&metric=coverage)](https://sonarcloud.io/dashboard?id=michaelruocco_random-value-suppliers)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=michaelruocco_random-value-suppliers&metric=ncloc)](https://sonarcloud.io/dashboard?id=michaelruocco_random-value-suppliers)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.michaelruocco/random-value-suppliers.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.michaelruocco%22%20AND%20a:%22random-value-suppliers%22)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview

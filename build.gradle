@@ -101,7 +101,7 @@ java {
     withSourcesJar()
 }
 
-def gitUrl = "https://github.com/michaelruocco/library-template"
+def gitUrl = "https://github.com/michaelruocco/random-value-suppliers"
 def pomConfig = {
     licenses {
         license {
