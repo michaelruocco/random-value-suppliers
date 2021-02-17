@@ -13,53 +13,31 @@
 
 ## Overview
 
-This is a template project for creating library projects more quickly. It does not include test
-fixtures or integration tests as these are not always required, but attempts to give the other
-commonly used components that I like to use on library projects including:
+This library contains some small utilities for generating random values in a testable way.
 
-*   [Lombok](https://projectlombok.org/) for boilerplate code generation
+### UUIDs
 
-*   [AssertJ](https://joel-costigliola.github.io/assertj/) for fluent and readable assertions
+If you need to generate a UUID value you can of course just call ```UUID.randomUUID()``` and this works fine.
+However, when you are testing you cannot easily determine what the value will be. This library aims to help with
+that by providing the ```UuidGenerator``` interface, in normal execution the ```RandomUuidGenerator``` can
+be used to provide a random UUID, this is ultimately just calls ```UUID.randomUUID()```. when testing you
+can use ```NonRandomUuidGenerator``` instead, by default it will cycle around 5 fixed UUID values each time
+it is called, if you require more than 5 distinct values you can pass in your own list of fixed UUID values
+instead if you wish.
 
-*   [SLF4J](http://www.slf4j.org/) for abstracted and pluggable logging
+### Numeric Strings
 
-*   [JUnit5](https://junit.org/junit5/) for unit testing
+For generic string values a similar ```NumericStringGenerator``` interface has been created, the generate method
+takes a single argument which determines the length of the numeric string to be returned. If you do not need to
+vary the length of the string value you can wrap the generated inside the ```FixedLengthNumericStringGenerator```
+class. There are two implementations of ```NumericStringGenerator``` the first is ```RandomNumericStringGenerator```
+which unsurprisingly will generate a string containing random digits of the specified length. When testing you
+can use ```IncrementingNumericStringGenerator``` this will return predictable results by returning an incrementing
+value starting from 1. So if you pass a length of 5, the first 3 calls would return "00001", "00002", "00003".
 
-*   [Mockito](https://site.mockito.org/) for mocking
+### Examples
 
-*   [Axion release plugin](https://github.com/allegro/axion-release-plugin) for version management
-
-*   [Spotless plugin](https://github.com/diffplug/spotless/tree/main/plugin-gradle) for code formatting
-
-*   [Nebula plugin](https://github.com/nebula-plugins/gradle-lint-plugin) for gradle linting
-
-*   [Versions plugin](https://github.com/ben-manes/gradle-versions-plugin) for monitoring dependency versions
-
-*   [Jacoco plugin](https://docs.gradle.org/current/userguide/jacoco_plugin.html) for code coverage reporting
-
-*   [Github actions](https://github.com/actions) for the build pipeline
-
-*   [Maven publish plugin](https://docs.gradle.org/current/userguide/publishing_maven.html) for publishing snapshots
-    and releases to [Maven Central](https://search.maven.org/)
-    
-*   [Nexus staging plugin](https://github.com/Codearte/gradle-nexus-staging-plugin) to automatically close and drop
-    releases published to [Maven Central](https://search.maven.org/)
-
-*   [Better code hub](https://bettercodehub.com/) for code and architecture analysis
-
-*   [Codecov](https://codecov.io/) for code coverage analysis
-
-*   [Sonar Cloud](https://sonarcloud.io/) for static code analysis 
-
-*   [Codacy](https://www.codacy.com/) for additional static code and coverage analysis
-
-For a number of the above tools to work your Github Actions pipeline will require the
-following secrets to be set up:
-
-*   SONAR_TOKEN for [Sonar Cloud](https://sonarcloud.io/) analysis
-*   CODACY_TOKEN for [Codacy](https://www.codacy.com/) analysis
-*   OSSRH_USERNAME and OSSRH_PASSWORD for releasing snapshots and releases to Maven Central
-*   OSSRH_PGP_SECRET_KEY and OSSRH_PGP_SECRET_KEY_PASSWORD for signing release artifacts before pushing to maven central
+The unit tests for each of the classes listed above demonstrate each of the classes above and how they can be used.
 
 ## Useful Commands
 
